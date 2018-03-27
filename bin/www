@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var debug = require('debug')('qriusreactbackend:server');
+var debug = require('debug')('hdfcApp:server');
 var http = require('http');
 var env = require('../Environment/env');
 var hostDetails = require('../Environment/hostDetails');
