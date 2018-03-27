@@ -38,7 +38,7 @@ var dbConfig = {
             "user": "",
             "pwd": "",
             "mongod": ["127.0.0.1:27017"],
-            "database": "fabrikDB"
+            "database": "HDFC_DB"
         }        
 };
 
