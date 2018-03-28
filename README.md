@@ -100,7 +100,7 @@ counters - Have another collection called counters - to store the userId counter
  installation steps
  1) clone the Repo
  2) move into apps directory and do npm install
- 3) start application using command 
+ 3) start application using command                                               
       node ./bin/www loc (env is last argument in this command,can be given as loc/dev/stg/prd)
  4) Application will be running on port 8083 (Changes based on env given) 
  5) Make Sure redis is running on port 6379
