@@ -81,11 +81,11 @@ Input: {
     ]
 }
 
-indexes created: 
- 
--db.client.createIndex({"userId" : 1},{unique:1}) - to ensure userId is unique and makes queries faster which are finding by UserId
+Indexes Created: 
 
--db.client.createIndex({"userName" : 1,"password":1}) - Compound Index - will be used in login Api to match username and password  
+- db.client.createIndex({"userId" : 1},{unique:1}) - to ensure userId is unique and makes queries faster which are finding by UserId
+
+- db.client.createIndex({"userName" : 1,"password":1}) - Compound Index - will be used in login Api to match username and password  
 
 counters - Have another collection called counters - to store the userId counter,everytime  new user is registered the counter is incremented and assaigned as userId.
 
