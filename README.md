@@ -50,6 +50,7 @@ Input: {
  - followed modular architectue by dividing this app into user and analytics sub modules
  - created indexes on Db for faster and efficient queries
  - used ES6 many features like promises,arrow functions
+ - Made code generic in such a wat that all the configs (mongo,hostdetails,port to run on,logger config) will fetched based on environment running
  
  Mongo Url:
  
@@ -98,7 +99,6 @@ counters - Have another collection called counters - to store the userId counter
  installation steps
  1) clone the Repo
  2) move into apps directory and do npm install
- 3) start application using command node ./bin/www loc (env can be given as loc/dev/stg/prd)
- 4) Application will be running on port 8083 (Changes based on env given)
- 5) Make sure 
- 
+ 3) start application using command 
+      node ./bin/www loc (env is last argument in this command,can be given as loc/dev/stg/prd)
+ 4) Application will be running on port 8083 (Changes based on env given) 
