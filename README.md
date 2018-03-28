@@ -51,6 +51,8 @@ Input: {
  - created indexes on Db for faster and efficient queries
  - used ES6 many features like promises,arrow functions
  - Made code generic in such a wat that all the configs (mongo,redis,hostdetails,port to run on,logger config) will fetched based on environment running
+ 
+ Mongo Url: mongodb://18.219.109.26:27017/ (can connect to mongo using this url from any mongo client like mongoChef)
   
  Mongo DB USER collection Schema
  
