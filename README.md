@@ -30,6 +30,7 @@ Input: {
     "userName":"ksaiogl5",
     "password":"123456"
   }
+  
 3) Logout: http://18.219.109.26:8083/user/api/v1.0/logout (GET)
 
 4) placeSearch:  http://18.219.109.26:8083/user/api/v1.0/placeSearch?quertText=HSRLayout&type=gym
