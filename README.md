@@ -51,9 +51,7 @@ Input: {
  - created indexes on Db for faster and efficient queries
  - used ES6 many features like promises,arrow functions
  - Made code generic in such a wat that all the configs (mongo,redis,hostdetails,port to run on,logger config) will fetched based on environment running
- 
- Mongo Url:
- 
+  
  Mongo DB USER collection Schema
  
  { 
