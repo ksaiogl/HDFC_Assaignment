@@ -1,6 +1,6 @@
 var TAG = 'log4js.js';
 var log4js = require('log4js');
-var env = require('./env.js').env;
+var env = global.env;
 var fs = require('fs');
 var os = require('os');
 

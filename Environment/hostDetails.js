@@ -1,4 +1,4 @@
-var env = require('./env.js').env;
+var env = global.env;
 
 var hostDetails = {
 	"prd": {
@@ -11,7 +11,7 @@ var hostDetails = {
 		"port": "8082"
 	},
 	"loc": {
-		"port": "5010"
+		"port": "8083"
 	}
 }
 
