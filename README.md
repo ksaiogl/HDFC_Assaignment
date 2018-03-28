@@ -29,7 +29,7 @@ Input: {
     "password":"123456"
   }
 3) Logout: http://18.219.109.26:8083/user/api/v1.0/logout (GET)
-4) placeSearch:  http://18.219.109.26:8083/user/api/v1.0/placeSearch?quertText=HSR Layout&type=gym
+4) placeSearch:  http://18.219.109.26:8083/user/api/v1.0/placeSearch?quertText=HSRLayout&type=gym
    takes queryText(eg: HSR Layout) and type(eg: gym,hotel) as input and lists gyms around HSR Layout
    type field optional,if not provided lists all places around input location,i.e query text
    storing this api call place search as user searched places for analytics
@@ -37,6 +37,7 @@ Input: {
 4) getPlaceDetails: http://18.219.109.26:8083/user/api/v1.0/getPlaceDetails?placeId=ChIJEWxy9HgWrjsR0mL-LEDc-7w (GET)
    takes placeId and retreives details of that place
    storing this api call place data as user viewed places for analytics
+   placeId(unique for every place,will be coming in google place search api response) will be taken from response of place serach api above
 
 5) getSearchedPlaces:http://18.219.109.26:8083/analytics/api/v1.0/getSearchedPlaces?fromDate=2018-03-26&toDate=2018-03-30 (GET)
  list the places user searched with date filters(optional input fields) 
