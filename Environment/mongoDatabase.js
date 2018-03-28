@@ -2,31 +2,31 @@ var TAG = 'mongoDatabase.js';
 var mongoClient = require('mongodb').MongoClient;
 var async = require('async');
 
-var env = require('./env.js').env;
-console.log(TAG + " " + "Deployment Environment is: " + env);
+var env = global.env;
+console.log(TAG + " " + "Deployment Environment is: " + global.env);
 
 var dbConfig = {
     "prd":
         {
-            "type": "replicaSet",
+            "type": "singleInstance",
             "user": "",
             "pwd": "",
-            "mongod": [],
+            "mongod": ["18.219.109.26:27017"],
             "database": "HDFC_DB"
         },
 
     "stg":
         {
-            "type": "replicaSet",
+            "type": "singleInstance",
             "user": "",
             "pwd": "",
-            "mongod": [],
+            "mongod": ["18.219.109.26:27017"],
             "database": "HDFC_DB"
         },
 
     "dev":
         {
-            "type": "replicaSet",
+            "type": "singleInstance",
             "user": "",
             "pwd": "",
             "mongod": ["18.219.109.26:27017"],
