@@ -13,6 +13,7 @@ Developed apis for getting anayltics about user searches and the places he viewe
 Postman collection Link of Apis for reference: https://www.getpostman.com/collections/5c92d1ad5c04ec38a6cb
 
 1) Register: http://18.219.109.26:8083/user/api/v1.0/register (POST)
+
 Input: { 
     "userName" : "ksaioglll", 
     "password" : "123456", 
@@ -24,11 +25,13 @@ Input: {
 }
 
 2) Login: http://18.219.109.26:8083/user/api/v1.0/login (POST)
+
  Input: {
     "userName":"ksaiogl5",
     "password":"123456"
   }
 3) Logout: http://18.219.109.26:8083/user/api/v1.0/logout (GET)
+
 4) placeSearch:  http://18.219.109.26:8083/user/api/v1.0/placeSearch?quertText=HSRLayout&type=gym
    takes queryText(eg: HSR Layout) and type(eg: gym,hotel) as input and lists gyms around HSR Layout
    type field optional,if not provided lists all places around input location,i.e query text
@@ -41,6 +44,7 @@ Input: {
 
 5) getSearchedPlaces:http://18.219.109.26:8083/analytics/api/v1.0/getSearchedPlaces?fromDate=2018-03-26&toDate=2018-03-30 (GET)
  list the places user searched with date filters(optional input fields) 
+ 
 6) getViewedPlaces : http://18.219.109.26:8083/analytics/api/v1.0/getViewedPlaces?fromDate=2018-03-26&toDate=2018-03-30 (GET)
  list the places user viewed with date filters(optional input fields)
  
@@ -59,7 +63,7 @@ Input: {
  
  Mongo Url: mongodb://18.219.109.26:27017/ (can connect to mongo using this url from any mongo client like mongoChef)
   
- Mongo DB USER collection Schema
+ Mongo DB USER collection Schema:                                                                     
  
  { 
     "_id" : ObjectId("5aba7e1b51e74f0d136c01db"), 
