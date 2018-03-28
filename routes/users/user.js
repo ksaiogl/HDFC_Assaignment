@@ -352,7 +352,7 @@ const generateUserId = (req) => {
     return new Promise((resolve, reject) => {
         var db = dbConfig.mongoDbConn;
         global.logger.logger_client.info(`${TAG} Inside generateUserId function`)
-        db.collection('counters').findAndModify({ _id: 'userId' }, null, { $inc: { seq: 1 } }, { new: true })
+        db.collection('counters').findAndModify({ _id: 'userId' }, null, { $inc: { seq: 1 } }, { upsert: true,new: true })
             .then(result => {
                 req.body.userId = result.value.seq
                 global.logger.logger_client.info(`${TAG} Succsefully generated UserId`)
