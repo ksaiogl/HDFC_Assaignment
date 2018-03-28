@@ -51,6 +51,8 @@ Input: {
  - created indexes on Db for faster and efficient queries
  - used ES6 many features like promises,arrow functions
  - Made code generic in such a wat that all the configs (mongo,redis,hostdetails,port to run on,logger config) will fetched based on environment running
+ - Used Helpers function to craete success and error response instead of making sucess and error objects everytime
+ - stored all the required data like helpers functions,logger variable,env etc,. in global object on start of application so these data can be used across whole application instead of requring the file of logger or helpers function every time we need them.
  
  Mongo Url: mongodb://18.219.109.26:27017/ (can connect to mongo using this url from any mongo client like mongoChef)
   
