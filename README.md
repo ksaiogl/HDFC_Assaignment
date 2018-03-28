@@ -102,3 +102,4 @@ counters - Have another collection called counters - to store the userId counter
  3) start application using command 
       node ./bin/www loc (env is last argument in this command,can be given as loc/dev/stg/prd)
  4) Application will be running on port 8083 (Changes based on env given) 
+ 5) Make Sure redis is running on port 6379
