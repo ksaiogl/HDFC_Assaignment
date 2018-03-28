@@ -50,7 +50,7 @@ Input: {
  - followed modular architectue by dividing this app into user and analytics sub modules
  - created indexes on Db for faster and efficient queries
  - used ES6 many features like promises,arrow functions
- - Made code generic in such a wat that all the configs (mongo,hostdetails,port to run on,logger config) will fetched based on environment running
+ - Made code generic in such a wat that all the configs (mongo,redis,hostdetails,port to run on,logger config) will fetched based on environment running
  
  Mongo Url:
  
