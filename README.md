@@ -10,6 +10,8 @@ Stored the location searches user made to get form analytics out that data
 
 Developed apis for getting anayltics about user searches and the places he viewed
 
+Postman collection Link of Apis for reference: https://www.getpostman.com/collections/5c92d1ad5c04ec38a6cb
+
 1) Register: http://18.219.109.26:8083/user/api/v1.0/register (POST)
 Input: { 
     "userName" : "ksaioglll", 
