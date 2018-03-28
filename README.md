@@ -90,6 +90,7 @@ Indexes Created:
 counters - Have another collection called counters - to store the userId counter,everytime  new user is registered the counter is incremented and assaigned as userId.
 
  Mongo DB Counters collection Schema
+ 
 { 
     "_id" : "userId", 
     "seq" : NumberInt(2)
